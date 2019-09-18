@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Survey</string>
+    <string name="question_string">Tabs or Spaces?</string>
+    <string name="tabs_button">Tabs</string>
+    <string name="spaces_button">Spaces</string>
+    <string name="reset_button">Reset</string>
+</resources>
