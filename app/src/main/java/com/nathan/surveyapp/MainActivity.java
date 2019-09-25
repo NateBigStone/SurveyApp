@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button mSpacesButton;
     TextView mTabsCount;
     TextView mSpacesCount;
+    Button mResultsButton;
     Button mResetButton;
 
     int mTabsValue = 0;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mSpacesButton = findViewById(R.id.spacesButton);
         mTabsCount = findViewById(R.id.tabsCount);
         mSpacesCount = findViewById(R.id.spacesCount);
+        mResultsButton = findViewById(R.id.resultsButton);
         mResetButton = findViewById(R.id.resetButton);
 
         if (savedInstanceState != null) {
@@ -56,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mResultsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //TODO Intent stuffs
+            }
+        });
 
         mResetButton.setOnClickListener(new View.OnClickListener() {
             @Override
