@@ -2,6 +2,7 @@ package com.nathan.surveyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -9,8 +10,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String EXTRA_QUESTION_ONE = "com.nathan.surveyapp.question_one";
+
     private static final String TABS_INDEX = "tabs";
     private static final String SPACES_INDEX = "spaces";
+
+    private static final int RESULTS_REQUEST_CODE = 0;
 
     Button mTabsButton;
     Button mSpacesButton;
@@ -30,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
         mTabsButton = findViewById(R.id.tabsButton);
         mSpacesButton = findViewById(R.id.spacesButton);
-        mTabsCount = findViewById(R.id.tabsCount);
-        mSpacesCount = findViewById(R.id.spacesCount);
+        mTabsCount = findViewById(R.id.questionTwoCount);
+        mSpacesCount = findViewById(R.id.questionOneCount);
         mResultsButton = findViewById(R.id.resultsButton);
         mResetButton = findViewById(R.id.resetButton);
 
@@ -61,7 +66,9 @@ public class MainActivity extends AppCompatActivity {
         mResultsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO Intent stuffs
+                Intent showResultsIntent = new Intent(MainActivity.this, ResultsActivity.class);
+                showResultsIntent.putExtra(EXTRA_QUESTION_ONE, mTabsValue);
+                startActivityForResult(showResultsIntent, RESULTS_REQUEST_CODE);
             }
         });
 
