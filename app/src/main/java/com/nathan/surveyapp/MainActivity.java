@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final String EXTRA_QUESTION_ONE = "com.nathan.surveyapp.question_one";
+    public static final String EXTRA_QUESTION_ONE = "com.nathan.surveyapp.questionOne";
 
     private static final String TABS_INDEX = "tabs";
     private static final String SPACES_INDEX = "spaces";
