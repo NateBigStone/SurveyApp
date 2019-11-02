@@ -10,8 +10,6 @@ public class ResultsActivity extends AppCompatActivity {
 
     Button mReset;
     Button mContinue;
-    TextView mQuestionOne;
-    TextView mQuestionTwo;
 
     TextView mQuestionOneCount;
     TextView mQuestionTwoCount;
@@ -23,8 +21,7 @@ public class ResultsActivity extends AppCompatActivity {
 
         int questionOne = getIntent().getIntExtra(MainActivity.EXTRA_QUESTION_ONE, 0);
 
-        //mQuestionOne.findViewById(R.id.optionOne);
-
+        mQuestionOneCount.findViewById(R.id.questionOneCountTest);
         //mQuestionOneCount.setText(Integer.toString(questionOne));
 
         mReset = findViewById(R.id.resetButton);

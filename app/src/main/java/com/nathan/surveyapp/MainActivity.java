@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_QUESTION_ONE = "com.nathan.surveyapp.questionOne";
+    public static final String EXTRA_QUESTION_TWO = "com.nathan.surveyapp.questionTwo";
 
     private static final String TABS_INDEX = "tabs";
     private static final String SPACES_INDEX = "spaces";

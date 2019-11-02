@@ -10,24 +10,34 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside">
+        android:gravity="center"
+        >
 
         <TextView
             android:id="@+id/optionOne"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/option_one"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            />
 
         <TextView
             android:id="@+id/questionOneCount"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="25dp"
-            android:text="  "
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/questionOneCountTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
             android:textSize="36sp" />
 
     </LinearLayout>
@@ -36,9 +46,12 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/optionTwo"
@@ -51,7 +64,7 @@
             android:id="@+id/questionTwoCount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  "
+            android:text=""
             android:textSize="36sp" />
 
     </LinearLayout>
@@ -60,9 +73,12 @@
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        android:gravity="center">
 
         <Button
             android:id="@+id/resetButton"
