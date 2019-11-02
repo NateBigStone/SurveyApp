@@ -23,18 +23,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="@string/option_one"
-            android:textSize="24sp"
+            android:textSize="36sp"
             />
 
         <TextView
             android:id="@+id/questionOneCount"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="36sp" />
-
-        <TextView
-            android:id="@+id/questionOneCountTest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
@@ -58,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/option_two"
-            android:textSize="24sp" />
+            android:textSize="36sp" />
 
         <TextView
             android:id="@+id/questionTwoCount"

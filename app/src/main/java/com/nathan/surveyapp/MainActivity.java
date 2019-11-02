@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent showResultsIntent = new Intent(MainActivity.this, ResultsActivity.class);
                 showResultsIntent.putExtra(EXTRA_QUESTION_ONE, mTabsValue);
+                showResultsIntent.putExtra(EXTRA_QUESTION_TWO, mSpacesValue);
                 startActivityForResult(showResultsIntent, RESULTS_REQUEST_CODE);
             }
         });
