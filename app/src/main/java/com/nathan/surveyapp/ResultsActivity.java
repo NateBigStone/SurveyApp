@@ -15,6 +15,9 @@ public class ResultsActivity extends AppCompatActivity {
     Button mReset;
     Button mContinue;
 
+    TextView mQuestionOneText;
+    TextView mQuestionTwoText;
+
     TextView mQuestionOneCount;
     TextView mQuestionTwoCount;
 
@@ -23,11 +26,17 @@ public class ResultsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
+        String questionOneText = getIntent().getStringExtra(MainActivity.EXTRA_QUESTION_ONE_TEXT);
+        String questionTwoText = getIntent().getStringExtra(MainActivity.EXTRA_QUESTION_TWO_TEXT);
         int questionOne = getIntent().getIntExtra(MainActivity.EXTRA_QUESTION_ONE, 0);
         int questionTwo = getIntent().getIntExtra(MainActivity.EXTRA_QUESTION_TWO, 0);
 
+        mQuestionOneText = findViewById(R.id.optionOne);
+        mQuestionTwoText = findViewById(R.id.optionTwo);
         mQuestionOneCount = findViewById(R.id.questionOneCount);
         mQuestionTwoCount = findViewById(R.id.questionTwoCount);
+        mQuestionOneText.setText(questionOneText + ": ");
+        mQuestionTwoText.setText(questionTwoText + ": ");
         mQuestionOneCount.setText(Integer.toString(questionOne));
         mQuestionTwoCount.setText(Integer.toString(questionTwo));
 

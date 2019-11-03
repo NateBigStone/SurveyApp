@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name">Survey</string>
-    <string name="question_string">Tabs or Spaces?</string>
-    <string name="tabs_button">Tabs</string>
-    <string name="spaces_button">Spaces</string>
-    <string name="reset_button">Reset</string>
+    <string name="question_string">Configure a Survey</string>
+    <string name="tabs_button"></string>
+    <string name="spaces_button"></string>
+    <string name="configure_button">Configure</string>
     <string name="results_button">Results</string>
     <string name="continue_button">Continue</string>
-    <string name="option_one">Tabs:</string>
-    <string name="option_two">Spaces:</string>
+    <string name="reset_button">Reset</string>
+    <string name="option_one"></string>
+    <string name="option_two"></string>
+    <string name="instructions">Enter a question</string>
+    <string name="submit">Submit</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="answer_1">Answer 1</string>
+    <string name="answer_2">Answer 2</string>
 </resources>
