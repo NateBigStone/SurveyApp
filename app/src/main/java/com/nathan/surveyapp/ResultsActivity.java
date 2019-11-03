@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ResultsActivity extends AppCompatActivity {
 
@@ -48,6 +49,7 @@ public class ResultsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent clearResultsIntent = new Intent(ResultsActivity.this, MainActivity.class);
                 startActivityForResult(clearResultsIntent, MAIN_REQUEST_CODE);
+                Toast.makeText(ResultsActivity.this, "Survey Reset", Toast.LENGTH_LONG).show();
             }
         });
 
